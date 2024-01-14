@@ -2,6 +2,7 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, DataCollatorWithPadding
 import evaluate
 import numpy as np
+from transformers import TrainingArguments
 
 
 raw_datasets = load_dataset("glue", "mrpc")
