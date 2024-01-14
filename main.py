@@ -1,9 +1,7 @@
 from datasets import load_dataset
-from transformers import AutoTokenizer, DataCollatorWithPadding
+from transformers import AutoTokenizer, DataCollatorWithPadding, TrainingArguments, AutoModelForSequenceClassification, Trainer
 import evaluate
 import numpy as np
-from transformers import TrainingArguments
-from transformers import AutoModelForSequenceClassification
 
 
 raw_datasets = load_dataset("glue", "mrpc")
