@@ -3,6 +3,7 @@ from transformers import AutoTokenizer, DataCollatorWithPadding
 import evaluate
 import numpy as np
 from transformers import TrainingArguments
+from transformers import AutoModelForSequenceClassification
 
 
 raw_datasets = load_dataset("glue", "mrpc")
